@@ -12,3 +12,6 @@ class ProductManager:
     def total_inventory_value(self):
         total = sum(product.price * product.quantity for product in self.products)
         return total
+    
+    def remove_products(self, product_name):
+        self.products = [product for product in self.products if product.name != product_name]
