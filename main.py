@@ -10,6 +10,7 @@ product3 = Product("Headphones", 50, 30)
 manager.add_products(product1)
 manager.add_products(product2)
 manager.add_products(product3)
+manager.remove_products("Phone")
 
 manager.display_all_products()
 print(f"Total inventory value: {manager.total_inventory_value()}")
