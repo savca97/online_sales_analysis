@@ -1,5 +1,6 @@
 from product import Product
 from product_manager import ProductManager
+from cart import Cart
 
 manager = ProductManager()
 
@@ -14,3 +15,12 @@ manager.remove_products("Phone")
 
 manager.display_all_products()
 print(f"Total inventory value: {manager.total_inventory_value()}")
+
+cart = Cart()
+
+cart.add_to_cart(product1)
+cart.add_to_cart(product2)
+cart.add_to_cart(product3)
+
+cart.display_cart()
+print(f"Total cart value: {cart.total_cart_value()}")
